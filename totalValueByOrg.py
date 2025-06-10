@@ -18,4 +18,7 @@ soma_bilhetes["total_gasto_bilhete"] = soma_bilhetes["total_gasto_bilhete"].appl
 )
 
 #exibe resultado
-print(soma_bilhetes)
+#print(soma_bilhetes)
+
+# Salvar em arquivo CSV
+soma_bilhetes.to_csv('totalValueByOrg.csv', index=False)

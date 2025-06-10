@@ -21,4 +21,7 @@ soma_por_companhia["total_gasto_bilhetes"] = soma_por_companhia["total_gasto_bil
 soma_por_companhia = soma_por_companhia.sort_values(by="total_gasto_bilhetes", ascending=False)
 
 # Exibe o resultado
-print(soma_por_companhia)
+# print(soma_por_companhia)
+
+# Salvar em arquivo CSV
+soma_por_companhia.to_csv('totalValueByAirline.csv', index=False)

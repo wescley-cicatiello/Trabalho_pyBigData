@@ -10,4 +10,7 @@ passagens_por_companhia = df.groupby("companhia_aerea").size().reset_index(name=
 passagens_por_companhia = passagens_por_companhia.sort_values(by="quantidade_passagens", ascending=False)
 
 # Exibe o resultado
-print(passagens_por_companhia)
+#print(passagens_por_companhia)
+
+# Salvar em arquivo CSV
+passagens_por_companhia.to_csv('qtdByAirline.csv', index=False)
